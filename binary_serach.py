@@ -1,9 +1,9 @@
-def binary_search(list, search):
+def binary_search(list, target):
     first = 0
     last = len(list) -1
 
-    while first <= last:
-        midpoint = (first + last)//2
+    while first <= last: # while loop causes it to grow
+        midpoint = (first + last)//2 #constant time 
 
         if list[midpoint] == target:
             return midpoint
